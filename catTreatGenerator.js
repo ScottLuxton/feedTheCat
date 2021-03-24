@@ -6,9 +6,11 @@ const catTreats = [
     'Cheese',
 ]
 
-const catTreatGenerator = catTreats[Math.floor(Math.random() * catTreats.length)];
-
-console.log(catTreatGenerator)
+const catTreatGenerator = function(array) {
+    const randomIndex = [Math.floor(Math.random() * array.length)];
+    return array[randomIndex]
+}
+console.log(catTreatGenerator(catTreats))
 
 
 
